@@ -1,0 +1,98 @@
+body
+{
+width:100%;
+min-height:100%;
+overflow-x: hidden;
+position:relative;
+}
+h1
+{
+text-align:center;
+}
+.profile-card
+{
+position:absolute;
+left:50%;
+top:0;
+transform: translate(-50%,0);
+height:auto;
+background-color:yellow;
+display:flex;
+width:33%;
+flex-direction:column;
+box-shadow: 2px 2px 4px 0 black;
+border-radius:10%;
+overflow-x:hidden;
+padding:0;
+margin:20px 0;
+}
+section#image-sect
+{
+margin:0;
+padding:0;
+}
+section#details-sect
+{
+font-size:1.3rem;
+}
+section#image-sect img
+{
+width:100%;
+max-height:30vh;
+margin:0;
+}
+
+button#toggle-credits
+{
+width:20%;
+padding:0.5rem 0;
+font-size:1em;
+border-radius:10%;
+border:none;
+cursor:pointer;
+align-self: center;
+color:white;
+background-color:black;
+transition:background-color,color 0.5s linear;
+margin:10px 0;
+}
+button#toggle-credits:hover
+{
+background-color:green;
+color:black;
+transition:color,background-color 0.5s linear;
+}
+
+section#skills-sect
+{
+display:flex;
+justify-content:space-around
+}
+
+section#skills-sect ul
+{
+font-size:1.5rem;
+}
+
+section#my-repos
+{
+flex:30%;
+display:flex;
+flex-direction:column;
+align-items:center;
+font-size:1.4rem;
+}
+
+.h-0
+{
+max-height:0;
+overflow-y:hidden;
+transition: max-height 1s linear;
+}
+.expand-auto
+{
+max-height:2000px;
+overflow-y:hidden;
+transition: max-height 1s linear;
+}
+
